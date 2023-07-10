@@ -44,7 +44,7 @@ public static class DebugEditorMenu
 
                if (serializedProperty.objectReferenceValue == null && serializedProperty.objectReferenceInstanceIDValue != 0)
                {
-                   Debug.LogError($"Prefab: {prefabParentName} Current Object: {currentObject} has missing reference in [{ObjectNames.NicifyVariableName(serializedProperty.name)}]");
+                   Debug.LogError($"NullRefValidator: Prefab: {prefabParentName} Current Object: {currentObject} has missing reference in [{ObjectNames.NicifyVariableName(serializedProperty.name)}]");
                }
            }
        }
